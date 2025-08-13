@@ -12,4 +12,9 @@ export default defineConfig({
     tsconfigPaths(),
     netlifyPlugin() as any,
   ],
+  css: {
+    postcss: {
+      plugins: [],
+    },
+  },
 });
