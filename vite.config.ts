@@ -1,20 +1,14 @@
+import path from "path";
+import tailwindcss from "@tailwindcss/vite";
+import react from "@vitejs/plugin-react";
 import { defineConfig } from "vite";
 
-import { reactRouter } from "@react-router/dev/vite";
-import tailwindcss from "@tailwindcss/vite";
-import tsconfigPaths from "vite-tsconfig-paths";
-import netlifyPlugin from "@netlify/vite-plugin-react-router";
-
+// https://vite.dev/config/
 export default defineConfig({
-  plugins: [
-    tailwindcss(),
-    reactRouter(),
-    tsconfigPaths(),
-    netlifyPlugin() as any,
-  ],
-  css: {
-    postcss: {
-      plugins: [],
+  plugins: [react(), tailwindcss()],
+  resolve: {
+    alias: {
+      "@": path.resolve(__dirname, "./src"),
     },
   },
 });
