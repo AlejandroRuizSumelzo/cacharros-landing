@@ -117,7 +117,7 @@ export function PrizesSection() {
   ];
 
   return (
-    <section className="py-16 bg-background">
+    <section id="prize" className="py-16 bg-background">
       <div className="container mx-auto max-w-7xl px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl sm:text-4xl font-bold mb-4">
