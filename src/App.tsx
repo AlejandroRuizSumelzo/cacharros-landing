@@ -2,6 +2,7 @@ import { Header } from "@/components/header";
 import { HeroSection } from "@/components/hero-section";
 import { PrizesSection } from "@/components/prize-section";
 import { RulesSection } from "@/components/rules-section";
+import { FutmondoScoringSystem } from "@/components/futmondo-scoring-system";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <HeroSection />
       <RulesSection />
       <PrizesSection />
+      <FutmondoScoringSystem />
     </div>
   );
 }

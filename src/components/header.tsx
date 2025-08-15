@@ -11,6 +11,7 @@ export function Header() {
   const navItems = [
     { label: "Reglas", href: "#rules" },
     { label: "Premios", href: "#prize" },
+    { label: "Sistema de Puntuación", href: "#scoring" },
   ];
 
   return (
